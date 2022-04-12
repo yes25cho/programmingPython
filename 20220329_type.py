@@ -50,14 +50,35 @@ print('짝'*10)
 
 print(18 ** 3)  #거듭제곡
 
+#자주 쓰지는 않지만 시험에는 나온다
 #진수  #java : 8진수 0o; 16진수 0x;
 #바이너리  : 이진수의
-print(0b10)     #2진수 10  2
-print(0o10)     #8진수 10 8
-print(0x10)     #16진수 10 16
-print(0xFF)     #16진수 FF 255
+print(0b10)     #2진수 10 => 2
+print(0o10)     #8진수 10 => 8
+print(0x10)     #16진수 10 => 16
+print(0xFF)     #16진수 FF => 255 #색깔코드
 
-#10진수 -> 2진수
+#10진수 -> 2진수, 8진수, 16진수
 print(bin(10))      #0b1010
 print(bin(9))       #0b1001
+print(oct(10))      #0o12
+print(hex(10))      #0xa
+
+
+#지수 표현
+print(f'지구의 나이 : {4.542e9}살')
+print(f'원자의 크기 : 10^-10m, {1e-10}m')
+
+#복소수
+print(9+1j-4-5j)        #(-5-4j)
+ys = 9+1j
+hj = 7-3j
+print(ys+hj)            #(16-2j)
+print(ys.real)
+print(hj.imag)
+print(hj.conjugate())       #켤레복소수
+print(hj * hj.conjugate())      #(58+0j) = 49 + (-3j X 3j) = 49 + 9 = (58+0j)
+print(type(ys))     #<class 'complex'>
+
+
 
