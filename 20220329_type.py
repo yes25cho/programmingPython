@@ -81,4 +81,3 @@ print(hj * hj.conjugate())      #(58+0j) = 49 + (-3j X 3j) = 49 + 9 = (58+0j)
 print(type(ys))     #<class 'complex'>
 
 
-
