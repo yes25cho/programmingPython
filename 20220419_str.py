@@ -50,5 +50,39 @@ print(f'{student_number[:-2]}학년반')  #start:end-1    [:end] 앞까지
 print(f'{student_number[:]}학년반')  #start:end-1    [:] 앞~끝까지 #문자열을 넣음
 
 
+#문자열 함수
+print(f'길이 : {len(student_number)}') #4
+print(f'2개수 : {student_number.count("2")}') #2
+print(f'{"NCT dream buffering".upper()}')
+print(f'{"NCT dream buffering".lower()}')
+s = "   NCT dream buffering     "
+print(f'{s.strip()}')
+print(f'{s.lstrip()}')
+print(f'{s.rstrip()}')
+print(f'{s.find("e")}') #[7]
+print(f'{s.find("z")}') #없으면 -1
+print(f'{s.rfind("e")}') #[7]
+print(f'{s.index("e")}')    #2
+print(f'{s.find("z")}') #없으면 -1
+print(f'{s.index("b")}') #7
+#print(f'{s.index("z")}')    #없으면 오류난다 ValueError: substring not found
+print(f'{s.replace("buffering","hello future")}')       #replace하면 바뀐 문자열을 리턴하지만 원본은 바뀌지 않음
+print(s)
 
+print('e' in s) #True
+print('z' in s) #False
 
+#split(나누다), join(합치다)
+
+ip = "10.253.123.119"
+ip_list = ip.split('.')
+print(ip_list)
+name_list = '양다연, 최자윤, 임채영, 이예진, 인소리 '
+name_list = names.split()
+print(name_list)
+print(name_list[2])
+print(name_list[2:4])
+ip_list_str = '::'.join(ip_list)
+print(ip_list_str)
+name_list_str = ' | '.join(name_list)
+print(", ".join(name_list_str))
