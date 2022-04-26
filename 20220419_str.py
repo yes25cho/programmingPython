@@ -72,17 +72,48 @@ print(s)
 print('e' in s) #True
 print('z' in s) #False
 
-#split(나누다), join(합치다)
-
-ip = "10.253.123.119"
-ip_list = ip.split('.')
-print(ip_list)
-name_list = '양다연, 최자윤, 임채영, 이예진, 인소리 '
-name_list = names.split()
-print(name_list)
-print(name_list[2])
-print(name_list[2:4])
-ip_list_str = '::'.join(ip_list)
+#split, join
+ip = '10.253.123.119'
+ip_List = ip.split('.')
+print(ip_List)
+names = '양다연, 최자윤, 임채영, 이예진, 인소리'
+name_List = names.split(',')
+print(name_List)
+print(name_List[2])
+print(name_List[2:4])
+ip_list_str = '::'.join(ip_List)
 print(ip_list_str)
-name_list_str = ' | '.join(name_list)
-print(", ".join(name_list_str))
+name_List_str = ' | '.join(name_List)
+print(name_List_str)
+print(",".join(name_List))
+
+
+#format
+s = 'name: {}, number: {}, soccer: {}'
+print(s.format('손흥민', 7, True))
+s = 'name: {1}, number: {2}, soccer: {0}'
+print(s.format('손흥민', 7, True))
+s = '-'
+print(s.format(name='손흥민', s=True, n=7))
+
+phone_number = '010-9793-8993'
+print(f'전화 번호 : {phone_number[9:13]}')
+print(f'전화 번호 : {phone_number[9:]}')    #끝까지 출력
+print(f'전화 번호 : {phone_number[-4:]}')   #좋을 수 있음
+#p46연습
+s = "name: {}, number: {}, soccer: {}"
+print(s.format("Ronaldo", 7, True))
+print("name: {name}, number: {num}".format(name = "Jordan", num = 23))
+
+print("{:d}".format(515))
+print("{:5d}".format(515))
+print("{:=+5d}".format(515))
+print("{:05d}".format(515))
+print("{:+05d}".format(515))
+
+print("{:f}".format(11.17))
+print("{:12f}".format(11.17))
+print("{:12.1f}".format(11.17))
+
+print("{:=+.1f}".format(11.17))
+
