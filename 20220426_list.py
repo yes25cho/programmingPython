@@ -3,13 +3,14 @@ player = ['Faker', 10, True]        #문자, 숫자. 불리안
 print(len(empty_list))  #0
 print(len(player))  #3
 print(type(empty_list), type(player))
-empty_list2  = list()
+empty_list2 = list()        #[]
 print(len(empty_list2))     #0
 message = list('miracle')
 print(message)      #['m', 'i', 'r', 'a', 'c', 'l', 'e']
 # numbers = list(56)  #TypeError: 'int' object is not iterable
 # print(numbers)
 
+#리스트 추가
 player = player+[10, 11]        #리스트 풀려서 하나씩 추가
 print(player)
 
@@ -18,6 +19,7 @@ print(player)
 player.append(56)
 print(player)
 
+#수정
 player.insert(2, 'SKT T1')      #index, 값
 print(player)
 player.extend([30, 31])         #+=랑 같음, 즉 플려서 하나씩추가
@@ -92,3 +94,4 @@ print(반3)
 print(list(range(11, 99+1, 2)))
 #한자리 숫자중 짝수인 숫자 리스트를 출력 하자
 print(list(range(8, 0, -2)))
+
